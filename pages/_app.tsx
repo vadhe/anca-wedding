@@ -5,6 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 import 'modern-normalize'
 import theme from 'theme/theme'
+import Fonts from 'theme/Fonts'
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -14,6 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>Next.js TypeScript Quickstart</title>
       </Head>
       <ChakraProvider theme={theme}>
+        <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>
     </>
