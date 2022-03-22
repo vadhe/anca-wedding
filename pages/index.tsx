@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
+/* eslint-disable jsx-a11y/media-has-caption */
 import * as React from 'react'
 import { NextPage } from 'next'
 import { Box, Heading, Img, Text } from '@chakra-ui/react'
@@ -34,6 +36,9 @@ const IndexPage: NextPage = () => (
       <Text>No Name</Text>
       <Img src="/qrcode.png" />
     </Box>
+    <audio autoPlay loop>
+      <source src="/song.mp3" type="audio/mpeg" />
+    </audio>
   </Box>
 )
 
