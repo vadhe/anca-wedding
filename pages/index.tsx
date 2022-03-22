@@ -8,17 +8,17 @@ const IndexPage: NextPage = () => (
     {/* <Navbar /> */}
     <Box
       backgroundImage="url('/wedding.png')"
-      backgroundPosition="center"
+      backgroundPosition={{ base: '56%, 49%', lg: 'center' }}
       backgroundRepeat="no-repeat"
       w="full"
-      h="100vh"
+      h={{ base: '80vh', lg: '100vh' }}
       display="flex"
       justifyContent="center"
       alignItems="center"
       flexDirection="column"
       color="#fff"
     >
-      <Heading fontSize="5xl" as="h1" fontFamily="'Bungee', cursive">
+      <Heading fontSize={{ base: '4xl', lg: '5xl' }} as="h1" fontFamily="'Bungee', cursive">
         A I N I L & A N C A
       </Heading>
       <Text>Mar 26, 2022, 7:00 PM | Desa Biroro</Text>
@@ -28,7 +28,7 @@ const IndexPage: NextPage = () => (
         Amplop Elektronik
       </Heading>
       <Text>Transfer via BCA</Text>
-      <Text fontFamily="'Bungee', cursive" fontSize="5xl">
+      <Text fontFamily="'Bungee', cursive" fontSize={{ base: 'xl', lg: '5xl' }}>
         123-356-78910-11
       </Text>
       <Text>No Name</Text>
